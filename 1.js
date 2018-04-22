@@ -15,7 +15,7 @@ if (people == Math.abs(people) && people == Math.round(people) && people !== '')
       let sum_hurgada = hurgada - people;
       alert(sum_hurgada + " осталось мест в hurgada");
     } else if (people <= sharm) {
-     let sharm_confirm = confirm("Согласны ли Вы быть в группе sharm?");
+      let sharm_confirm = confirm("Согласны ли Вы быть в группе sharm?");
       if (sharm_confirm == true) {
         let sum_sharm = sharm - people;
         alert(sum_sharm + " осталось мест в sharm");
@@ -24,7 +24,7 @@ if (people == Math.abs(people) && people == Math.round(people) && people !== '')
         if (taba_confirm == true) {
           let sum_taba = taba - people;
           alert(sum_taba + " осталось мест в taba");
-        } else if (taba == false) {
+        } else if (taba_confirm == false) {
           alert("Вы нечего не выбрали");
         } else {
           alert("Мест нет!");
@@ -38,7 +38,6 @@ if (people == Math.abs(people) && people == Math.round(people) && people !== '')
   } else {
     alert("Мест нет!");
   }
-}
-else {
- alert("Ошибка!");
+} else {
+  alert("Вы нечего не выбрали!");
 }
