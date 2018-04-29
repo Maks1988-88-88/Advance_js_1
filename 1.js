@@ -1,14 +1,21 @@
-'use strict';
+"use strict";
 
 let people = prompt("Введите число отдыхающих", "");
+let val = Number(people);
+const isValidInput = people !== null && !Number.isNaN(val);
 console.log(people);
 
 const hurgada = 25;
 const sharm = 15;
 const taba = 6;
+let error = 0 >= people;
 
-if (people == Math.abs(people) && people == Math.round(people) && people !== '') {
+if (people <= 0 && isValidInput) {
+  console.log(people);
+  alert("Ошибка!");
+}  else if (people == Math.abs(people) && people == Math.round(people)) {
   // alert("роботает");
+
   if (people <= hurgada) {
     let hurgada_confirm = confirm("Согласны ли Вы быть в группе hurgada?");
     if (hurgada_confirm == true) {
